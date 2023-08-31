@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+    * {
+        font-family: "Nunito", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+}
+    
+html{
+        font-size: 63%;
+        overflow: hidden;
+}
+    
+body {
+        background-image:url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+        margin: 0;
+}
+    
+header {
+        margin: 0px;
+}
+</style>
+    
+
+</head>
+
+
+<body>
+  <header>
+     <section class="nav">
+         <a href="#">Landing Page</a>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#speciality">About</a></li>
+                <li> <a href="#review">Contact</a></li>
+            </ul>
+      </section>
+   </header>
+
+<style>
+    
+a {
+        text-decoration: none;
+        color: #000;
+}
+    
+ul {
+        list-style: none;
+}
+    
+.logo {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: #666;
+        display: inline-block;
+}
+    
+.logo i {
+        padding-right: 2rem;
+        color: black;
+}
+    
+.order {
+        text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px yellow;
+}    
+.nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        color: black;
+        height: 65px;
+        padding: 1em;
+        font-size: 25px;
+}
+    
+.menu li:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+}
+    
+.menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+}
+    
+.menu>li {
+        margin: 0 1rem;
+        overflow: hidden;
+}
+.menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    
+#menu-toggle {
+        display: none;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+        display: block;
+        background-color: black;
+        position: absolute;
+        height: 6px;
+        width: 32px;
+        border-radius: 3px;
+        color: white;
+}
+    
+.menu-button::before {
+        content: "";
+        margin-top: -8px;
+}
+    
+.menu-button::after {
+        content: "";
+        margin-top: 8px;
+}
+ 
+</style>
+
+
+<style>
+a {
+        text-decoration: none;
+        color: #000;
+}
+    
+ul {
+        list-style: none;
+}
+    
+.nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        color: black;
+        height: 65px;
+        padding: 1em;
+        font-size: 25px;
+}
+.menu li:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+}
+    
+.menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+}
+    
+.menu>li {
+        margin: 0 1rem;
+        overflow: hidden;
+}
+   
+
+
+    
+.menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    
+#menu-toggle {
+        display: none;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+        display: block;
+        background-color: black;
+        position: absolute;
+        height: 6px;
+        width: 32px;
+        border-radius: 3px;
+        color: white;
+}
+    
+.menu-button::before {
+        content: "";
+        margin-top: -8px;
+}
+    
+.menu-button::after {
+        content: "";
+        margin-top: 8px;
+}
+</style>
+
+
+<style>
+
+    
+@media (max-width: 991px) {
+        html {
+            font-size: 55%;
+        }
+        header {
+            padding: 2rem;
+        }
+        section {
+            padding: 2rem;
+        }
+}
+    
+@media (max-width: 768px) {
+        .menu-button-container {
+            display: flex;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            margin-top: 50px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem
+        }
+     .menu li:hover {
+            transform: scale(1);
+      }
+     #menu-toggle~.menu li {
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+     }
+     #menu-toggle:checked~.menu li {
+            border: 1px solid #9f9a9a;
+            height: 2.5em;
+            padding: 0.5em;
+     }
+     .menu>li {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0.5em 0;
+            width: 100%;
+            color: black;
+            background-color: #e8e8e8;
+     }
+     .menu>li:not(:last-child) {
+            border-bottom: 1px solid #444;
+     }
+}
+</style>
+
+ 
+<section class="home" id="home ">
+  <div class="content">
+     <h3 class="mainfont">
+       <span class="yellowColor">AYUSH PANDEY -</span>
+      </h3>
+      <h3>
+          student of <span class="yellowColor">TECHNICAL </span>FIELD
+       </h3>
+          <p>
+          ( Technology is all   around you in your gaming gadgets like the Wii, Playstation, Xbox, etc. and in your mobile phones, iPads, computers, etc. Most of the things we have in our kitchen, like the microwave, toaster, fridge, etc. are all different types of technology.
+          Technology is when we take something from the world of science and then create it into something that humans use.We must keep our food cold so that it is not spoilt by being out in the warm weather. This concept of science helped scientists develop technology to keep our food cold when we are not eating it by using the fridge. However, all of us like to eat hot food. So, to instantly make food hot, scientists created a microwave. In this way, scientists used technology to help all of us with our daily lives.
+          Technology is very useful in our daily lives.)
+
+
+          </p>
+   </div>
+</section>
+
+
+
+<style>
+ 
+.home {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        min-height: 100vh;
+        align-items: center;
+}
+.home .content {
+        flex: 1 1 40rem;
+        padding-top: 6.5rem;
+}
+.home .image {
+        flex: 1 1 30rem;
+}
+.home .content h3 {
+        font-size: 5rem;
+        color: black;
+        border-style:solid;
+        background-color:blue;
+}
+.yellowColor {
+        color: yellow;
+}
+    
+.mainfont {
+        font-family: "Times New Roman", cursive;
+}
+.home .content p {
+        font-size: 1.7rem;
+        color: black;
+        padding: 1rem 0;
+        border-style:dotted;
+        background-color:orange;
+}
+    
+.heading {
+        text-align: center;
+        font-size: 3.5rem;
+        padding: 1rem;
+        color: #666;
+}
+@media (max-width: 450px) {
+        html {
+            font-size: 50%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            text-align: center;
+        }
+}
+
+</style>
+</body>
+</html>
